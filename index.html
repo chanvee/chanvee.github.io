@@ -1,0 +1,287 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Happy Birthday To You</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">*I am a so called programmer and your birthday is coming,</span><br />
+				<span class="space"/><span class="comments">*so I write some codes to celebrate your day.</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Girl u = <span class="keyword">new</span> Girl();<br />
+				<span class="comments">// On Nov 8th, 1991, a little girl was born,  and her parents give her a name called DongQin Fu.</span><br />
+				u.birthday = getTimeoftheday(<span class="string">"1991.11.8"</span>);<br />
+                u.name = <span class="string">"DongQin Fu"</span>;<br/>
+				<span class="comments">//I am so lucky to meet you, you means too much for me.</span><br />
+                <span class="comments">//I know you are a goodhearted girl and you have many delightful advantages.</span><br/>
+				u.morality = {<span class="string">"Goodhearted","Optimistic","Gritty and Independent"...</span>}<br />
+				<span class="comments">// In my eyes you are nearly perfect, and today is your birthday, </span><br />				
+                <span class="comments">//I wish you will be happy everyday, have a healthy body both you and your family and friends, and have enough sleep time.</span><br/>
+				<span class="keyword">for</span>  (time = today; time<=100 years; time++) {<br />
+				<span class="placeholder"/>u.mood = <span class="string">"Happy"</span>;<br />
+				<span class="placeholder"/>u.getawayfrom(<span class="string">"troubles"</span>);<br />
+				<span class="placeholder"/>u.body = <span class="string">"Healthy"</span>;<br />
+				}<br />
+                <span class="comments">//At last, wish you to find  a job you love;</span><br/>            
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						A new happy life has started for
+						<div id="elapseClock"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			Inspired by <a href="http://love.hackerzhou.me/">Hackerzhou's LoveStory</a> project.<br />
+			Copyright © 2013 <a href='http://chanvee.com'>chanvee.com</a> 2013-2015
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2013, 10, 8);
+		together.setHours(0);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			//setTimeout(function () {
+			//	startHeartAnimation();
+			//}, 5000);
+
+			setTimeout(function () {
+			    startHeartAnimation();
+			}, 14500);
+
+			setTimeout(function () {
+			    startF1();
+			}, 500);
+
+			setTimeout(function () {
+			    startF2();
+			}, 600);
+
+			setTimeout(function () {
+			    startF3();
+			}, 700);
+
+			setTimeout(function () {
+			    startDD1();
+			}, 800);
+
+			setTimeout(function () {
+			    startDD2();
+			}, 800);
+
+			setTimeout(function () {
+			    startQ1();
+			}, 400);
+
+			setTimeout(function () {
+			    startQ2();
+			}, 2000);
+
+			setTimeout(function () {
+			    startColon1();
+			}, 700);
+
+			setTimeout(function () {
+			    startColon2();
+			}, 800);
+
+			setTimeout(function () {
+			    startH1();
+			}, 1000);
+
+			setTimeout(function () {
+			    startH2();
+			}, 2000);
+
+			setTimeout(function () {
+			    startH3();
+			}, 3000);
+
+			setTimeout(function () {
+			    startA1();
+			}, 4000);
+
+			setTimeout(function () {
+			    startA2();
+			}, 5000);
+
+			setTimeout(function () {
+			    startA3();
+			}, 6000);
+
+			setTimeout(function () {
+			    startP1();
+			}, 7000);
+
+			setTimeout(function () {
+			    startP2();
+			}, 8000);
+
+			setTimeout(function () {
+			    startPP1();
+			}, 9000);
+
+			setTimeout(function () {
+			    startPP2();
+			}, 10000);
+
+			setTimeout(function () {
+			    startY1();
+			}, 11000);
+
+			setTimeout(function () {
+			    startY2();
+			}, 12000);
+
+			setTimeout(function () {
+			    startY3();
+			}, 13000);
+
+			setTimeout(function () {
+			    startB1();
+			}, 1000);
+
+			setTimeout(function () {
+			    startB2();
+			}, 2000);
+
+			setTimeout(function () {
+			    startB3();
+			}, 2000);
+
+			setTimeout(function () {
+			    startI1();
+			}, 3000);
+
+			setTimeout(function () {
+			    startI2();
+			}, 3000);
+
+			setTimeout(function () {
+			    startI3();
+			}, 4000);
+
+			setTimeout(function () {
+			    startR1();
+			}, 5000);
+
+			setTimeout(function () {
+			    startR2();
+			}, 6000);
+
+			setTimeout(function () {
+			    startR3();
+			}, 6000);
+
+			setTimeout(function () {
+			    startT1();
+			}, 6000);
+
+			setTimeout(function () {
+			    startT2();
+			}, 7000);
+
+			setTimeout(function () {
+			    startHH1();
+			}, 7000);
+
+			setTimeout(function () {
+			    startHH2();
+			}, 8000);
+
+			setTimeout(function () {
+			    startHH3();
+			}, 8000);
+
+			setTimeout(function () {
+			    startD1();
+			}, 9000);
+
+			setTimeout(function () {
+			    startD2();
+			}, 9000);
+
+			setTimeout(function () {
+			    startAA1();
+			}, 9000);
+
+			setTimeout(function () {
+			    startAA2();
+			}, 10000);
+
+			setTimeout(function () {
+			    startAA3();
+			}, 10000);
+
+			setTimeout(function () {
+			    startYY1();
+			}, 11000);
+
+			setTimeout(function () {
+			    startYY2();
+			}, 12000);
+
+			setTimeout(function () {
+			    startYY3();
+			}, 12000);
+
+			setTimeout(function () {
+			    startCandle1();
+			}, 12000);
+
+			setTimeout(function () {
+			    startCandle2();
+			}, 12000);
+
+			setTimeout(function () {
+			    startCandle3();
+			}, 13000);
+
+			setTimeout(function () {
+			    startCandle4();
+			}, 13000);
+
+			//timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
