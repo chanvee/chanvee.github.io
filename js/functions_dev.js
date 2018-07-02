@@ -70,6 +70,87 @@ function startHeartAnimation() {
     }, interval);
 }
 
+/*得到姓名H第一笔*/
+function getNameH1(angle) {
+    var x = -300;
+    var y = angle;
+    return new Array(offsetX + x, offsetY + y);
+}
+
+function startNameH1() {
+    var interval = 50;
+    var angle = -250;
+    var heart = new Array();
+    var animationTimer = setInterval(function () {
+        var bloom = getNameH1(angle);
+        var draw = true;
+        if (draw) {
+            heart.push(bloom);
+            garden.createRandomBloom(bloom[0], bloom[1]);
+        }
+        if (angle >= -130) {
+            clearInterval(animationTimer);
+            //showMessages();
+        } else {
+            angle += 10;
+        }
+    }, interval);
+}
+
+/*得到姓名H第二笔*/
+function getNameH2(angle) {
+    var x = angle;
+    var y = -190;
+    return new Array(offsetX + x, offsetY + y);
+}
+
+function startNameH2() {
+    var interval = 50;
+    var angle = -300;
+    var heart = new Array();
+    var animationTimer = setInterval(function () {
+        var bloom = getNameH2(angle);
+        var draw = true;
+        if (draw) {
+            heart.push(bloom);
+            garden.createRandomBloom(bloom[0], bloom[1]);
+        }
+        if (angle >= -240) {
+            clearInterval(animationTimer);
+            //showMessages();
+        } else {
+            angle += 10;
+        }
+    }, interval);
+}
+
+/*得到姓名H第三笔*/
+function getNameH3(angle) {
+    var x = -240;
+    var y = angle;
+    return new Array(offsetX + x, offsetY + y);
+}
+
+function startNameH3() {
+    var interval = 50;
+    var angle = -250;
+    var heart = new Array();
+    var animationTimer = setInterval(function () {
+        var bloom = getNameH3(angle);
+        var draw = true;
+        if (draw) {
+            heart.push(bloom);
+            garden.createRandomBloom(bloom[0], bloom[1]);
+        }
+        if (angle >= -130) {
+            clearInterval(animationTimer);
+            //showMessages();
+        } else {
+            angle += 10;
+        }
+    }, interval);
+}
+
 function getF1(angle) {
     var x = -300;
     var y = angle;
@@ -205,7 +286,7 @@ function getQ1(angle) {
     var t = angle / Math.PI;
     var x = 30* Math.cos(t);
     var y = 60 * Math.sin(t);
-    return new Array(offsetX - 110 + x, offsetY - 190 + y);
+    return new Array(offsetX - 190 + x, offsetY - 190 + y);
 }
 
 function startQ1() {
@@ -230,13 +311,13 @@ function startQ1() {
 
 function getQ2(angle) {
     var x = angle;
-    var y = 2 * x + 30;
+    var y = 2 * x + 190;
     return new Array(offsetX + x, offsetY + y);
 }
 
 function startQ2() {
     var interval = 50;
-    var angle = -100;
+    var angle = -180;
     var heart = new Array();
     var animationTimer = setInterval(function () {
         var bloom = getQ2(angle);
@@ -245,7 +326,7 @@ function startQ2() {
             heart.push(bloom);
             garden.createRandomBloom(bloom[0], bloom[1]);
         }
-        if (angle >= -80) {
+        if (angle >= -160) {
             clearInterval(animationTimer);
             //showMessages();
         } else {
@@ -258,7 +339,7 @@ function getColon1(angle) {
     var t = angle / Math.PI;
     var x = 3 * Math.cos(t);
     var y = 3 * Math.sin(t);
-    return new Array(offsetX - 60 + x, offsetY - 220 + y);
+    return new Array(offsetX - 130 + x, offsetY - 220 + y);
 }
 
 function startColon1() {
@@ -285,7 +366,7 @@ function getColon2(angle) {
     var t = angle / Math.PI;
     var x = 3 * Math.cos(t);
     var y = 3 * Math.sin(t);
-    return new Array(offsetX - 60 + x, offsetY - 160 + y);
+    return new Array(offsetX - 130 + x, offsetY - 160 + y);
 }
 
 function startColon2() {
