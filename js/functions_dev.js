@@ -1466,7 +1466,7 @@ function timeElapse(date){
     if (seconds < 0) {
         seconds = -seconds;
         var days = Math.floor(seconds / (3600 * 24));
-        days = -days;
+        days = -days+30;
         if (days == 0) {
             days = "-" + days;
         }

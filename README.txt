@@ -1,2 +1,1 @@
 This program is inspired by bckerzhou's project, you can click the index.html to execute the program if you have installed a web browser which supports HTML5 like Goggle chrome or Firefox and so on.
-Hi, what I want to say is just you means too much and special for me and my life, lucky to have met you.
