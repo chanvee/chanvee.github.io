@@ -10,7 +10,7 @@ The project including:
         
 The `.js/.css` is the minimize version of `_dev.js/_dev.css`
 
-If you want to modify this projec for someone else, the simplest way is
+If you want to modify this project for someone else, the simplest way is
 to modify the get functions(like `getNameH1()` and so on) which indicate the stroke of word.
 
 For example, the first stroke of **H** is a vertical line, so we can use a curvilinear equation to denote it like:
